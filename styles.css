@@ -157,6 +157,10 @@ nav {
     text-align: center;
     padding: 0;
     background-color: #0d1117;
+    background-image: url('data/matisse.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -176,7 +180,7 @@ nav {
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 0.5rem;
-    color: #f0f6fc;
+    color: black;
 }
 
 .subtitle {
@@ -742,12 +746,22 @@ footer {
         padding: 2rem 1rem;
     }
 
+    /* Mobile hero background: vertical image */
+    .hero {
+        background-image: url('data/matisse_mobile.jpg');
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
+
     .hero h1 {
         font-size: 2rem;
+        color: black;
     }
 
     .subtitle {
         font-size: 1.2rem;
+        color: black;
     }
 
     .profile-picture {
@@ -824,10 +838,12 @@ footer {
 @media (min-width: 600px) {
     .hero h1 {
         font-size: 3rem;
+        color: black;
     }
     
     .subtitle {
         font-size: 1.5rem;
+        color: black;
     }
     
     .experience-header,
